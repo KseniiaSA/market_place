@@ -15,6 +15,10 @@
         }
     ],
     "products":[
-        
+        {
+            "name": "HP notebook",
+            "price": 10000.0,
+            "img_url": "https://www.hp.com/ca-en/shop/Html/Merch/Images/c08505268_1750x1285.jpg"
+        }
     ]
 }
