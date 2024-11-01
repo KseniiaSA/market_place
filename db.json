@@ -19,6 +19,10 @@
             "name": "drone for filming",
             "price": 20.000,
             "img.url": "https://smartmag.biz.ua/content/uploads/images/dron-dlia-siomkr.jpeg"
+        },{
+            "name": "HP notebook",
+            "price": 10000.0,
+            "img_url": "https://www.hp.com/ca-en/shop/Html/Merch/Images/c08505268_1750x1285.jpg"
         }
     ]
 }
