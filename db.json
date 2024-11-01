@@ -1,16 +1,11 @@
 {
     "users": [
-<<<<<<< HEAD
-
         {
             "id": 0,
             "name": "Bohdan",
             "github_url": "https://github.com/robocode-pb",
             "balance": 22
-         }
-
-    ]       
-=======
+         },     
         {
             "id": 2,
             "name" : "Kseniia",
@@ -19,5 +14,4 @@
 
         }
     ]
->>>>>>> 4a456036c0a3cc3dd4e4f37abefc1b686d2842a9
 }
