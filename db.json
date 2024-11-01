@@ -1,5 +1,6 @@
 {
     "users": [
+<<<<<<< HEAD
 
         {
             "id": 0,
@@ -9,4 +10,14 @@
          }
 
     ]       
+=======
+        {
+            "id": 2,
+            "name" : "Kseniia",
+            "github_url" : "https://github.com/KseniiaSA/market_place",
+            "balance": 784
+
+        }
+    ]
+>>>>>>> 4a456036c0a3cc3dd4e4f37abefc1b686d2842a9
 }
