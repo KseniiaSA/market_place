@@ -1,5 +1,12 @@
 {
-    "users": {
-        
-    }
+    "users": [
+
+        {
+            "id": 0,
+            "name": "Bohdan",
+            "github_url": "https://github.com/robocode-pb",
+            "balance": 22
+        }
+
+    ]       
 }
