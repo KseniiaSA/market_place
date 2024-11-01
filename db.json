@@ -1,5 +1,11 @@
 {
-    "users": {
-        
-    }
+    "users": [
+        {
+            "id": 2,
+            "name" : "Kseniia",
+            "github_url" : "https://github.com/KseniiaSA/market_place",
+            "balance": 784
+
+        }
+    ]
 }
