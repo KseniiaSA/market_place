@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <html lang="uk">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <title>Website of sales</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+    
+        <header>
+            <h1>Магазин Техніки</h1>
+        </header>
+    
+        <div class="container" id="product-list">
+            <!-- Тут будуть карти товарів -->
+        </div>
+    
+        <footer>
+            <p>Створено користувачем: <a href="https://github.com/robocode-pb" target="_blank">Bohdan</a></p>
+        </footer>
+    
+        <script>
+            // Дані з db.json
+            const data = {
+                "users": [
+                    {
+                        "id": 0,
+                        "name": "Bohdan",
+                        "github_url": "https://github.com/robocode-pb",
+                        "balance": 22
+                    },
+                    {
+                        "id": 2,
+                        "name": "Kseniia",
+                        "github_url": "https://github.com/KseniiaSA/market_place",
+                        "balance": 784
+                    }
+                ],
+                "products": [
+                    {
+                        "name": "drone for filming",
+                        "price": 20.000,
+                        "img_url": "https://smartmag.biz.ua/content/uploads/images/dron-dlia-siomkr.jpeg"
+                    },
+                    {
+                        "name": "HP notebook",
+                        "price": 10000.0,
+                        "img_url": "https://www.hp.com/ca-en/shop/Html/Merch/Images/c08505268_1750x1285.jpg"
+                    }
+                ]
+            };
+    
+            // Функція для створення карт товарів
+            function displayProducts(products) {
+                const productList = document.getElementById('product-list');
+                products.forEach(product => {
+                    const productCard = document.createElement('div');
+                    productCard.classList.add('product-card');
+                    productCard.innerHTML = `
+                        <img src="${product.img_url}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p class="price">${product.price} грн</p>
+                    `;
+                    productList.appendChild(productCard);
+                });
+            }
+    
+            // Відображаємо продукти на сторінці
+            displayProducts(data.products);
+        </script>
+    
+    </body>
+    
+    </html>
+    
