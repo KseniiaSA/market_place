@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website of sales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Магазин Техніки</h1>
+    </header>
+    <script>
+            
+        // Функція для створення карт товарів
+        function displayUser(user) {
+                const userCard = document.createElement('div');
+                userCard.classList.add('user-card');
+                userCard.innerHTML = `
+                <h3>${user.name}</h3>
+                <p class="price">${user.balance} грн</p>
+                <a href ="${user.balance}">githib</a>
+                `;
+                document.body.appendChild(userCard);
+            };
+
+        // Відображаємо користувача на сторінці
+        let userId = new URLSearchParams(window.location.search).get('id')
+        let userURL = "https://my-json-server.typicode.com/KseniiaSA/market_place/users/"
+         fetch(userURL+userId).then(async(response)=>{
+            let user = await response.json();
+            console.log(user)
+            displayUser(user);
+         });
+        
+    </script>
+    
+</body>
+</html>
