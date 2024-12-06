@@ -12,6 +12,8 @@
 
     <header>
         <h1>Магазин Техніки</h1>
+        <img src="15278.png" style=" height: 25px;
+    width: 25px;" onclick="buyAll()">
     </header>
 
     <div id="myModal" class="modal">
@@ -80,6 +82,11 @@
         //         console.log(products)
         //     })
         // })
+
+        function buyAll(){
+            document.getElementById('myModal')
+            .style.display = "block";
+        }
         
 
     </script>
