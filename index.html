@@ -33,6 +33,7 @@
         const DB_URL = 'https://market-24f0.restdb.io/rest/products';  // URL до вашої бази даних
 
         
+        let productsDB = []
         // Функція для створення карт товарів
         function displayProducts(products) {
             const productList = document.getElementById('product-list');
@@ -46,9 +47,12 @@
                     <p> ${product.description}</p>
                 `;
                 productList.appendChild(productCard);
+                productCard.addEventListener('click', function (){
+                   productsDB.push(productCard);
+              console.log(productsDB)
+                })
             });
         }
-
         // Отримуємо продукти з бази даних restDB
         fetch(DB_URL, {
             method: 'GET',
@@ -67,8 +71,17 @@
             console.error("Помилка при завантаженні продуктів:", error);
         });
 
+        
+
+        // document.getElementsByClassName('product-card')
+        // .forEach((product_card)=>{
+        //     product_card.addEventListener('click', function (card){
+        //         products.push(card);
+        //         console.log(products)
+        //     })
+        // })
+        
+
     </script>
-
 </body>
-
 </html>
